@@ -73,6 +73,10 @@ class MainActivity : AppCompatActivity() {
                val item=input.text.toString()
                CoroutineScope(Dispatchers.IO).launch {
                    repository.insert(Todo(item))
+                   val data= repository.getAllTodoItems()
+                   runOnUiThread{
+                       viewModel.setData(data)
+                   }
                }
            }
 
