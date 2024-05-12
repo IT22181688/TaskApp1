@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TaskApp1</string>
+    <string name="tvTitle">My Task App</string>
+    <string name="btnAdd">Add Task</string>
 </resources>
